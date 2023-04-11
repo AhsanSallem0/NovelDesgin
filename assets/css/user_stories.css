@@ -1,0 +1,35 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background-color: #333333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #666666;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #555555;
+  }
+  
+  tr:hover {
+    background-color: #444444;
+  }
+
+.user_table{
+    padding-top: 25vh;
+}
+
+.user_table h2{
+    text-align: center;
+}

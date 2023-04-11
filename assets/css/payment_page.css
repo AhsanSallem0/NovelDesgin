@@ -1,0 +1,102 @@
+.popup {
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    border: 1px solid grey;
+    overflow: auto;
+  }
+
+.left-column{
+    width: 54%;
+    float: left;
+    border-right: 1px solid grey;
+  }
+
+.order-summary-text{
+    text-indent: 3px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    overflow: auto;
+    padding-bottom: 3px;
+  }
+.order-summary-text img{
+    float: left; 
+    width: 10%;
+    padding-left: 3px;
+
+  }
+
+.account-name{
+  padding-top: 3px;
+}
+
+.bottom-left{
+    text-align: center;
+}
+
+.right-column {
+    float: right;
+    width: 45%;
+    
+ }
+
+.bottom-left-tiers{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tier-icons{
+    width: 90%;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+ }
+
+.icon-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    margin: 0 auto;
+    
+ }
+
+.icon-container img{
+    border: 1px solid transparent;
+    margin: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.icon-container img.selected {
+    border: 1px solid blue;
+ }
+
+.top-right{
+    text-indent: 3px;
+    /* border-bottom: 1px solid grey; */
+    
+}
+
+.top-right-bullet-points{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tier-details{
+  border-bottom: 1px solid grey;
+}
+
+.bottom-right{
+  margin-top: 10px;
+}

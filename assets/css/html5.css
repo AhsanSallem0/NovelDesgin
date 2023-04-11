@@ -1,0 +1,518 @@
+
+
+/* #flipbook .flip_page .depth{
+background-image:url(../assets/img/pages-depth.png);
+position:absolute;
+top:7px;
+width:16px;
+height:590px;
+} */
+.share-bar{
+	margin-bottom: 10px;
+}
+.flipbutton_div{
+	display: flex;
+  	justify-content: center;
+	width: 100%;
+	margin-bottom: 5px;
+}
+#prev-page, #next-page {
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+  }
+  
+  #prev-page {
+	float: left;
+  }
+  
+  #next-page {
+	float: left;
+	margin-left: 10px;
+  }
+  
+  #prev-page:hover, #next-page:hover {
+	background-color: #555;
+  }
+  
+  #prev-page:active, #next-page:active {
+	background-color: #222;
+  }
+
+#flipbook{
+	width:960px;
+	height:600px;
+	background-image:url(../img/flipbook_images/spine.png);
+	background-repeat:repeat-y;
+	background-position:479px 0;
+	z-index: 0;
+}
+
+#flipbook .shadow{
+	-webkit-transition: -webkit-box-shadow 0.5s;
+	-moz-transition: -moz-box-shadow 0.5s;
+	-o-transition: -webkit-box-shadow 0.5s;
+	-ms-transition: -ms-box-shadow 0.5s;
+
+	-webkit-box-shadow:0 0 10px #999;
+	-moz-box-shadow:0 0 10px #999;
+	-ms-box-shadow:0 0 10px #999;
+	-o-box-shadow:0 0 10px #999;
+	box-shadow:0 0 10px #999;
+}
+
+#flipbook .page{
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	box-shadow:0 0 20px rgba(0,0,0,0.2);
+
+	background-color: white; 
+	
+}
+
+#flipbook div[page="1"] > div, #flipbook div[page="2"] > div{
+	overflow:visible !important;
+}
+
+
+.flipbook_section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 25vh;
+  
+	overflow: hidden;
+
+	/* width:960px;
+	height:600px; */
+  }
+  
+  /* #flipbook .page{
+	background:white;
+	
+  } */
+  #flipbook .shadow, #flipbook.shadow{
+  -webkit-box-shadow: 0 4px 10px #666;
+  -moz-box-shadow: 0 4px 10px #666;
+  -ms-box-shadow: 0 4px 10px #666;
+  -o-box-shadow: 0 4px 10px #666;
+  box-shadow: 0 4px 10px #666;
+
+  
+  }
+  
+
+
+  .flip_page h1{  color: black;
+	text-align:center;
+	padding: 10px;
+  }
+  
+  .flip_page p{
+	color: black;
+	font-size: 16px;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	font-family: "Times New Roman", Times, serif;
+	line-height: 1;
+	padding: 10px;
+  }
+  .flip_page{
+	width:460px;
+	height:582px;
+	/* background-image:url(../pics/pages-depth.png); */
+
+	/* opacity: 0; */
+  }
+
+  #pdf_button {
+	background-color: #4285CC;
+	border: 2px solid #fff;
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+  }
+  
+  #pdf_button:hover {
+	background-color: #fff;
+	border: 2px solid #4285CC;
+	color: #4285CC;
+  }
+
+/* Steve jobs' book */
+
+@font-face {
+	font-family: 'Stempel-Garamond-W01-Roman';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/Stempel-Garamond-W01-Roman.woff') format('woff');
+  }
+
+.sample-html5 .zoom-in{
+	display:none;
+}
+
+.html5-book{
+	width:960px;
+	height:600px;
+	background-image:url(../img/flipbook_images/spine.png);
+	background-repeat:repeat-y;
+	background-position:479px 0;
+	z-index: 0;
+}
+
+
+.html5-book h1{
+	font-family: "Stempel-Garamond-W01-Roman";
+}
+
+.html5-book .book-content{
+	font-family: "Stempel-Garamond-W01-Roman";
+	font-size:14px;
+	margin:70px 40px;
+}
+
+.html5-book h2{
+	font-size:16px;
+	letter-spacing:2px;
+	font-weight: 400;
+}
+
+.html5-book blockquote{
+	color:#586078;
+	margin:10px 0;
+	font-style:italic;
+}
+
+.html5-book blockquote:before{
+	content: "\201C";
+	color:#333D53;
+	font-size:20px;
+}
+
+.html5-book blockquote:after{
+	content: "\201D";
+	color:#333D53;
+	font-size:20px;
+}
+
+.html5-book cite{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:13px;
+	font-weight:200;
+	font-style:normal;
+	color:#666;
+}
+
+.html5-book .book-content .center-pic{
+	margin:0;
+	text-indent:0;
+	text-align:center;
+}
+
+.html5-book .zoom-this:hover{
+	opacity:0.9;
+	cursor:pointer;
+}
+
+.html5-book .book-content p{
+	text-indent: 16px;
+}
+
+.html5-book .left-pic{
+	float:left;
+	margin-top:15px;
+	margin-right:15px;
+	margin-bottom:15px;
+}
+
+.animated{
+	-webkit-transition:margin-left 0.2s ease-in-out;
+	-moz-transition:margin-left 0.2s ease-in-out;
+	-o-transition:margin-left 0.2s ease-in-out;
+	-ms-transition:margin-left 0.2s ease-in-out;
+	transition:margin-left 0.2s ease-in-out;
+}
+
+.show-bar .html5-book .shadow{
+	-webkit-transition: -webkit-box-shadow 0.5s;
+	-moz-transition: -moz-box-shadow 0.5s;
+	-o-transition: -webkit-box-shadow 0.5s;
+	-ms-transition: -ms-box-shadow 0.5s;
+
+	-webkit-box-shadow:0 0 10px #999;
+	-moz-box-shadow:0 0 10px #999;
+	-ms-box-shadow:0 0 10px #999;
+	-o-box-shadow:0 0 10px #999;
+	box-shadow:0 0 10px #999;
+}
+
+.html5-book .page{
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	box-shadow:0 0 20px rgba(0,0,0,0.2);
+	
+	/* background-color: transparent; */
+}
+
+
+.html5-book .p1,
+.html5-book .p2,
+.html5-book .preend, 
+.html5-book .end{
+	background-color:white;
+	background-image:url(../img/flipbook_images/book-covers.jpg) !important;
+}
+
+.html5-book .p1{
+	background-position:0 0;
+}
+
+.html5-book .p1 .side{
+	width:5px;
+	height:600px;
+	position:absolute;
+	top:0;
+	left:475px;
+
+	background:-webkit-gradient(linear, left top, right top, color-stop(0, #333), color-stop(0.5,  #666), color-stop(1,  #333));
+	background-image:-webkit-linear-gradient(left, #333, #666, #333);
+	background-image:-moz-linear-gradient(left, #333, #666, #333);
+	background-image:-ms-linear-gradient(left, #333, #666, #333);
+	background-image:-o-linear-gradient(left, #333, #666, #333);
+	background-image:linear-gradient(left, #333, #666, #333);
+	
+	-webkit-transform:rotateY(-90deg);
+	-moz-transform:rotateY(-90deg);
+	-o-transform:rotateY(-90deg);
+	-ms-transform:rotateY(-90deg);
+	transform:rotateY(-90deg);
+
+	-webkit-transform-origin:top right;
+	-moz-transform-origin:top right;
+	-o-transform-origin:top right;
+	-ms-transform-origin:top right;
+	transform-origin:top right;
+	z-index:100000;
+
+}
+
+.html5-book-transform div[page="1"] > div, .html5-book-transform div[page="2"] > div{
+	overflow:visible !important;
+}
+
+.html5-book .depth{
+	background-image:url(../img/flipbook_images/pages-depth.png);
+	position:absolute;
+	top:7px;
+	width:16px;
+	height:590px;
+}
+
+.html5-book .front-side .depth{
+	left:4px;
+	background-position:0 0;
+}
+
+.html5-book .back-side .depth{
+	right:4px;
+	background-position:right 0;
+}
+
+
+.html5-book .p2{
+	background-position:-480px 0 !important;
+}
+
+.html5-book .preend{
+	background-position:-960px 0 !important;
+}
+
+.html5-book .end{
+	background-position:-1440px 0 !important;
+}
+
+.html5-book .hard{
+	width:480px;
+	height:600px;
+	background-color:white;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	-ms-box-shadow:none;
+	box-shadow:none;
+}
+
+.html5-book .page-wrapper{
+	-webkit-perspective:2000px;
+	-moz-perspective: 2000px;
+	-ms-perspective: 2000px;
+	perspective: 2000px;
+}
+
+.html5-book .own-size{
+	width:460px;
+	height:582px;
+	background-color:white;
+	overflow:hidden;
+}
+
+.html5-book .even{
+	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+	background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+}
+
+.html5-book .odd{
+	background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #fff), color-stop(1, #cacaca));
+	background-image:-webkit-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-moz-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-ms-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-o-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:linear-gradient(right, #fff 95%, #cacaca 100%);
+}
+
+.html5-book .loader{
+	background-image:url(../img/flipbook_images/loader.gif);
+	width:22px;
+	height:22px;
+	position:absolute;
+	top:280px;
+	left:219px;
+}
+
+.html5-book .page-number{
+	color:#999;
+	width:100%;
+	bottom:25px;
+	position:absolute;
+	display:block;
+	text-align: center;
+	line-height:30px;
+	font-size:11px;
+}
+
+.html5-book .table-contents{
+	font-size:16px;
+	width:300px;
+	margin:110px auto;
+
+	color:#ccc;
+}
+
+.html5-book .table-contents li{
+	list-style:none;
+	line-height:25px;
+}
+
+.html5-book .table-contents span{
+	float:right;
+}
+
+.html5-book .table-contents a{
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	color:#333;
+	margin:2px 0;
+	padding:0 10px;
+}
+
+.html5-book .table-contents a:hover{
+	background:#CAD1EE;
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+}
+
+
+
+
+.mymobilediv{
+	display: none;
+}
+
+
+
+/* -----------------------------------------Responsive Code--------------------------------------------------- */
+
+
+@media screen and (max-width:600px){
+body{
+	overflow: scroll;
+	height: auto;
+}
+	main{
+		display: none;
+	}
+.mymobilediv{
+	display: block;
+}
+.mymobilediv .myown-size{
+	display: none;
+	padding: 20px 10px;
+	-webkit-transition: all 2.5s ease;
+    -moz-transition: all 2.5s ease;
+    -o-transition: all 2.5s ease;
+    transition: all 2.5s ease;
+	
+}
+.mymobilediv .myown-size .mybook-content{
+	background-color: white;
+	
+	padding:10px 20px ;
+	/* height: 300px; */
+	overflow-y: auto;
+}
+.mymobilediv .myown-size.active{
+	display: block;
+	
+}
+.mybuttonsdiv{
+
+	margin-bottom: 10px;
+	justify-content: center;
+}
+header{
+	height: 136px;
+}
+.center-pic img{
+	/* height:300px ; */
+	object-fit: cover;
+}
+.downloadbuttondiv{
+	padding: 20px 0;
+	
+}
+
+}
+
+
+
+
+
